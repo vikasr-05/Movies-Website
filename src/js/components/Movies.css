@@ -1,0 +1,89 @@
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+      "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+      sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+      monospace;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  a:hover {
+    opacity: 0.9;
+  }
+  
+  a:active {
+    opacity: 1;
+  }
+  
+  .li {
+    list-style: none;
+  }
+  
+  .movies {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-gap: 10px;
+    margin-left: 50px;
+    margin-right: 150px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+  .movies .li {
+    position: relative;
+  }
+  .movies .li img {
+    width: 100%;
+  }
+  .movies .li .p {
+    padding: 10px;
+    background: linear-gradient(
+      to bottom,
+      rgba(0, 0, 9, 0) 0%,
+      rgba(0, 0, 0, 0.9) 100%
+    );
+    position: absolute;
+    text-align: center;
+    top: 0;
+    width: 100%;
+    display: none;
+    transition: 1s;
+  }
+  .movies .li:hover .p {
+    transition: 1s;
+    display: block;
+    color: white;
+  }
+  
+
+  .Movie-title {
+    font-family: "Poppins", sans-serif;
+    color: white;
+    margin-top: 5px;
+    margin-bottom: 30px;
+    width: 100%;
+    box-shadow: 2px 4px 2px rgb(17 16 16 / 50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70px;
+    background: #343a40;
+    margin-right: 10%;
+  }
+  .Movie-title:hover {
+    color: #ffdd95;
+  }
